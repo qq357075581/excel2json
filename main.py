@@ -71,10 +71,10 @@ def writeJson(name, json):
         fp.write(json)
 
 
-# store  achievement
-fileName = "achievement"
-file = "./excel/" + fileName + ".xlsx"
-jsonPath = "./json/"
+#
+fileName = ""
+file = ""
+jsonPath = "./json/" #export Json
 un_use_str = ''
 
 def file_name(file_dir):
@@ -89,8 +89,8 @@ def file_name(file_dir):
                 to_json()
                 print("finish=>",f)
             else:
-                print(f,"文件格式不正确，仅支持.xlsx格式")
+                print(f,"文件格式不正确，仅支持.xlsx格式") #xlsx 
 
 
 if __name__ == "__main__":
-    file_name("./excel")
+    file_name("./excel") #excel file
